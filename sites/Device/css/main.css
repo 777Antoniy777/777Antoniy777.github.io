@@ -2413,6 +2413,7 @@ _:-ms-fullscreen, :root .footer-adress {
 }
 
 .filter-title {
+  position: relative;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.23em;
@@ -2754,7 +2755,8 @@ _:-ms-fullscreen, :root .footer-adress {
 
 .filter-title::before {
   top: 30px;
-  right: 281px;
+/*  right: 281px;*/
+  right: -802px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
