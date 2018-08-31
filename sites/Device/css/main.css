@@ -621,6 +621,10 @@ a {
           animation-timing-function: ease;
 }
 
+_:-ms-fullscreen, :root .first-slider #first-slider-third-button:checked ~ .first-slider-list .third-slide {
+  margin-bottom: 2px;
+}
+
 @-webkit-keyframes change {
   0%   {opacity: 0;   }
   10%  {opacity: 0.1; }
@@ -790,6 +794,10 @@ a {
   z-index: 1;
 }
 
+_:-ms-fullscreen, :root .third-title {
+  padding-right: 0px;
+}
+
 .third-title::after {
   content: "03";
   position: absolute;
@@ -815,11 +823,6 @@ a {
 .slide-item-table {
   margin: 0;
   padding: 0;
-  display: table;
-  -ms-flex-direction: column;
-  -ms-flex-wrap: wrap;
-  -ms-flex-pack: start;
-  -ms-flex-align: center;
 }
 
 .slide-item-table tbody {
@@ -854,17 +857,6 @@ a {
       flex-wrap: wrap;
 }
 
-_:-ms-fullscreen, :root .slide-item-table tr {
-/*  width: 50px;*/
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  word-break: break-all;
-}
-
 .first-table tr {
   margin-right: 77px;
 }
@@ -883,6 +875,20 @@ _:-ms-fullscreen, :root .slide-item-table tr {
   margin-top: 4px;
   margin-left: 1px;
   letter-spacing: 0.01em;
+}
+
+_:-ms-fullscreen, :root .slide-item-table-item th {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .slide-item-table-item td {
@@ -914,13 +920,25 @@ _:-ms-fullscreen, :root .slide-item-table tr {
   margin-left: 59px;
 }
 
+_:-ms-fullscreen, :root .first-slider-item .first-slide-image {
+  margin-right: 120px;
+}
+
 .first-slider-item .second-slide-image {
   margin-left: 85px;
   margin-top: 12px;
 }
 
+_:-ms-fullscreen, :root .first-slider-item .second-slide-image {
+  margin-right: 125px;
+}
+
 .first-slider-item .third-slide-image {
   margin-top: 65px;
+}
+
+_:-ms-fullscreen, :root .first-slider-item .third-slide-image {
+  margin-right: 20px;
 }
 
 .slide-item-link {
@@ -1002,6 +1020,10 @@ _:-ms-fullscreen, :root .slide-item-table tr {
   margin: 0;
   padding: 0;
   word-break: break-all;
+}
+
+_:-ms-fullscreen, :root .popular-goods-item h3 {
+  letter-spacing: 0em;
 }
 
 /*стили на оживление второго слайдера*/
@@ -1194,6 +1216,15 @@ _:-ms-fullscreen, :root .slide-item-table tr {
   letter-spacing: 0.017em;
   margin: 0px;
 }
+
+_:-ms-fullscreen, :root .second-slider-item:not(:nth-child(3)) .slide-item-description {
+  width: 450px;
+}
+
+_:-ms-fullscreen, :root .second-slider-item:nth-child(3) .slide-item-description {
+  width: 430px;
+}
+
 .second-slider-buttons-list .slider-buttons-item {
   position: relative;
   font-size: 18px;
