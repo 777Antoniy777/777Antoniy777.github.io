@@ -246,16 +246,17 @@ a {
   width: 355px;
   height: 49px;
   padding-left: 39px;
-/*
   padding-bottom: 8px;
   padding-top: 10px;
-*/
-  padding-bottom: 0px;
   border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #f7e296;
   outline: none;
+}
+
+_::-webkit-full-page-media, +:future, :root .user-navigation-search {
+  padding-bottom: 18px;
 }
 
 .button-search {
@@ -1006,7 +1007,7 @@ _:-ms-fullscreen, :root .first-slider-item .third-slide-image {
   background-color: #f0c52e;
 }
 
-.popular-goods-item a:active,
+.popular-goods-item a:active h3,
 .popular-goods-item a:active ~ p img {
   opacity: 0.3;
 }
