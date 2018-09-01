@@ -256,7 +256,8 @@ a {
 }
 
 _::-webkit-full-page-media, _:future, :root .user-navigation-search {
-  padding-bottom: 18px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .button-search {
@@ -1576,8 +1577,8 @@ _:-ms-fullscreen, :root .main-footer {
 }
 
 _:-ms-fullscreen, :root .footer-site-list {
-  width: 490px;
-  margin-right: 100px;
+  width: 470px;
+  margin-right: 130px;
 }
 
 .footer-social-wrapper {
