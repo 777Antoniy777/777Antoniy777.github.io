@@ -263,7 +263,6 @@ _::-webkit-full-page-media, _:future, :root .user-navigation-search {
 _::-webkit-full-page-media, _:future, :root .user-navigation-search::placeholder {
   padding-bottom: 3px;
   padding-top: 3px;
-  line-height: 50px;
 }
 
 .button-search {
