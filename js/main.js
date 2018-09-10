@@ -1,14 +1,21 @@
-var one = document.querySelector(".project-element-button");
-var two = document.querySelector(".demands-element-button");
-var project = document.querySelector(".project-picture");
-var demands = document.querySelector(".demands-discription");
+var first_project = document.querySelector(".first-button");
+var second_project = document.querySelector(".second-button");
+var first_demands_button = document.querySelector(".demands-element-button");
+var first_picture = document.querySelector(".first-picture");
+var second_picture = document.querySelector(".second-picture");
+var first_demands = document.querySelector(".demands-discription");
 
-one.addEventListener("click", function (evt) {
+first_project.addEventListener("click", function (evt) {
   evt.preventDefault();
-  project.classList.toggle("project-picture-show");
+  first_picture.classList.toggle("picture-show");
 });
 
-two.addEventListener("click", function (evt) {
+second_project.addEventListener("click", function (evt) {
   evt.preventDefault();
-  demands.classList.toggle("demands-discription-show");
+  second_picture.classList.toggle("picture-show");
+});
+
+first_demands_button.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  first_demands.classList.toggle("demands-discription-show");
 });
