@@ -1,0 +1,44 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  width: 280px;
+  min-height: 59px;
+  padding: 16px 20px;
+  border: none;
+  color: $text-white;
+  background-color: #2aab6d;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba($text-white, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 300px;
+    min-height: 60px;
+    padding: 16px 20px;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--desktop {
+      width: 460px;
+    }
+  }
+}
