@@ -1,0 +1,238 @@
+.main-footer {
+  min-height: 235px;
+  padding: 38px 20px 10px 20px;
+  background-color: $text-white;
+  text-align: center;
+
+  &--mobile {
+    display: none;
+  }
+}
+
+.main-footer__logo-footer {
+  width: 147px;
+  height: 41px;
+}
+
+.main-footer__logo-desktop,
+.main-footer__logo-glass {
+  display: none;
+}
+
+.main-footer__logo-mobile {
+  fill: $color-light;
+}
+
+.main-footer__logo-tablet {
+  fill: $text-pink;
+}
+
+.main-footer__logo-link:hover .main-footer__logo-mobile {
+  fill: $text-pink;
+}
+
+.main-footer__logo-link:hover:not([href]) .main-footer__logo-mobile {
+  fill: $color-light;
+}
+
+.main-footer__logo-link:active {
+  opacity: 0.3;
+}
+
+.main-footer__logo-link:active .main-footer__logo-mobile {
+  fill: $color-light;
+}
+
+.main-footer__logo-link:active:not([href]) {
+  opacity: 1;
+}
+
+.main-footer__list {
+  @include list;
+  @include flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 35px auto 11px 53px;
+  width: 190px;
+  min-height: 66px;
+}
+
+.main-footer__item {
+  margin-right: 17px;
+}
+
+.main-footer__link {
+  @include flex;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba($color-light, 0.1);
+
+  &:hover {
+    box-shadow: 0 0 0 3px $color-light;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 3px rgba($color-light, 0.3);
+    opacity: 0.3;
+  }
+}
+
+.main-footer__image {
+  fill: $text-pink;
+  margin: auto;
+}
+
+.main-footer__image--youtube {
+  margin-left: 18px;
+}
+
+.main-footer__wrapper {
+  @include flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: $body-font-size;
+  line-height: $body-line-height - 6px;
+  font-weight: $font-normal;
+  width: 180px;
+  color: $color-light;
+  margin: 15px auto 10px;
+}
+
+.main-footer__description {
+  margin: 14px 14px 18px 1px;
+}
+
+.main-footer__html-logo {
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+.main-footer__html-link .main-footer__html-logo {
+  fill: $text-pink;
+}
+
+.main-footer__html-link:hover .main-footer__html-logo {
+  fill: $color-light;
+}
+
+.main-footer__html-link:active .main-footer__html-logo {
+  fill: rgba($color-light, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .main-footer {
+    margin-top: 15px;
+  }
+  /* stylelint-enable */
+
+  .main-footer {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 102px;
+    padding-top: 0;
+    padding-bottom: 17px;
+    margin-top: 10px;
+  }
+
+  .main-footer__logo-footer {
+    margin-bottom: 0;
+  }
+
+  .main-footer__list {
+    align-items: center;
+    padding-top: 17px;
+    margin: 0;
+    margin-left: 34px;
+  }
+
+  .main-footer__item {
+    margin-bottom: 5px;
+  }
+
+  .main-footer__wrapper {
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    width: 165px;
+  }
+
+  .main-footer__description {
+    width: 110px;
+    margin: 15px 4px 12px 21px;
+    word-break: break-all;
+  }
+
+  .main-footer__html-logo {
+    margin-right: 0;
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    min-height: 187px;
+    padding: 0 130px 2px;
+    margin-top: 1px;
+  }
+
+  /* stylelint-disable */
+  :-ms-fullscreen, :root .main-footer {
+    min-height: 127px;
+    margin-top: 70px;
+  }
+  /* stylelint-enable */
+
+  .main-footer__logo-footer {
+    margin-bottom: 15px;
+  }
+
+  .main-footer__logo-glass {
+    display: none;
+  }
+
+  .main-footer__logo-desktop {
+    display: block;
+
+    &--pink {
+      fill: $text-pink;
+    }
+
+    &--black {
+      fill: $color-light;
+    }
+  }
+
+  .main-footer__list {
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding-top: 0;
+    margin-left: 118px;
+  }
+
+  .main-footer__wrapper {
+    justify-content: flex-end;
+    font-size: $body-font-size + 4px;
+    align-items: center;
+    width: 242px;
+    margin: 0 0 5px;
+  }
+
+  .main-footer__description {
+    width: 200px;
+    margin: 0;
+    margin-right: 14px;
+    text-align: right;
+    letter-spacing: 0;
+  }
+
+  .main-footer__html-logo {
+    margin-right: 0;
+    margin-top: 8px;
+  }
+}

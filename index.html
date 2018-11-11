@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Портфолио</title>
-    <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
@@ -38,6 +38,18 @@
                 <a href="./img/device-catalog.jpg"><img src="./img/device-catalog.jpg" width="120px" height="180px" title="Страница каталога" alt="Страница каталога"></a>
               </div>
             </li>
+            <li class="project-element">
+              <div class="project-element-wrapper">
+                <h2 class="project-element-title"><a href="./sites/Pink/build/index.html">№3. Сайт приложения Пинк</a></h2>
+                <p>Сайт создан на технологиях HTML5 и CSS3. Используется адаптивная сетка. Разметка создана по правилам БЭМ. Использован Sass, сборка произведена через Gulp. Использовано прогрессивное улучшение.</p>
+                <button type="button" class="project-element-button third-button">Нажмите, чтобы развернуть</button>
+              </div>
+              <div class="project-picture third-picture">
+                <a href="./img/pink-index-desktop.jpg"><img src="./img/pink-index-desktop.jpg" width="120px" height="180px" title="Главная страница" alt="Главная страница"></a>
+                <a href="./img/pink-photo-desktop.jpg"><img src="./img/pink-photo-desktop.jpg" width="120px" height="180px" title="Страница фото" alt="Страница фото"></a>
+                <a href="./img/pink-form-desktop.jpg"><img src="./img/pink-form-desktop.jpg" width="120px" height="180px" title="Страница конкурса" alt="Страница конкурса"></a>
+              </div>
+            </li>
           </ul>
         </section>
         <section class="demands">
@@ -46,8 +58,8 @@
             <li class="demands-element">
               <h2 class="demands-element-title"><a href="demands.html">Требования к проекту №1, №2</a></h2>
               <div class="demands-element-wrapper">
-                <button type="button" class="demands-element-button">Нажмите, чтобы развернуть</button>
-                <div class="demands-discription">
+                <button type="button" class="demands-element-button first-demands-element-button">Нажмите, чтобы развернуть</button>
+                <div class="demands-discription first-demands-discription">
                   <ul class="demands-discription-list">
                     <li class="demands-discription-element">
                       <h3>Разметка:</h3>
@@ -97,6 +109,112 @@
                       <ol class="norms-list">
                         <li>С помощью JavaScript реализовано открытие/закрытие окна с формой (без вспомогательных библиотек).</li>
                         <li>С помощью JavaScript добавлена анимация формы (без вспомогательных библиотек).</li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="demands-list">
+            <li class="demands-element">
+              <h2 class="demands-element-title"><a href="demands.html">Требования к проекту №3</a></h2>
+              <div class="demands-element-wrapper">
+                <button type="button" class="demands-element-button second-demands-element-button">Нажмите, чтобы развернуть</button>
+                <div class="demands-discription second-demands-discription">
+                  <ul class="demands-discription-list">
+                    <li class="demands-discription-element">
+                      <h3>Разметка:</h3>
+                      <ol class="norms-list">
+                        <li>Грубые ошибки в разметке отсутствуют.</li>
+                        <li>Отсутствуют типовые ошибки в разметке по методологии.</li>
+                        <li>У всех векторных изображений размер прописан в теге <span>&lt;img&gt;</span>, у встроенных SVG-изображений размер прописан в теге <span>&lt;svg&gt;</span>.
+                        </li>
+                        <li>В разметке отсутствует дублирование кода для одного и того же элемента, с помощью которых элемент отображается в разных местах страницы на разных версиях: мобильной, десктопной, планшетной.
+                        </li>
+                        <li>Использовано минимально возможное количество HTML-элементов (нет лишних элементов).</li>
+                        <li>Названия полей форм привязаны к своим полям с помощью <span>&lt;label&gt;</span>.</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>Стилизация:</h3>
+                      <ol class="norms-list">
+                        <li>В CSS отсутствует <span>!important</span>.</li>
+                        <li>Указаны альтернативные варианты шрифта и тип семейства в конце перечисления <span>font-family</span>.</li>
+                        <li>Нестандартные шрифты подключены локально. Формат шрифтов должен быть <span>woff</span> и <span>woff2</span>.</li>
+                        <li>Для стилизации не использованы <span>#id</span>.</li>
+                        <li>Нет глобальных стилей тегов.</li>
+                        <li>Для блока, у которого есть фоновое изображение, прописан фоновый цвет, который соответствует преобладающему цвету изображения (пока изображение не загружено, страница выглядит похоже на макет).</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>CSS-препроцессор:</h3>
+                      <ol class="norms-list">
+                        <li>Код стилей должен быть разбит на несколько частей.</li>
+                        <li><span>&</span> только для псевдоэлементов, псевдоклассов и модификаторов.</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>Адаптивность:</h3>
+                      <ol class="norms-list">
+                        <li>Выполнена вёрстка трёх состояний каждой страницы: мобильной, планшетной и десктопной.</li>
+                        <li>В разметке есть правильный вьюпорт тег.</li>
+                        <li>Для микросеток использованы флексбоксы.</li>
+                        <li>Выполнена ретинизация растровой графики.</li>
+                        <li>Выполнено кадрирование контентных изображений.</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>Графика:</h3>
+                      <ol class="norms-list">
+                        <li>Использована векторная графика.</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>Оптимизация:</h3>
+                      <ol class="norms-list">
+                        <li>«Нежная» ретинизация.</li>
+                        <li>Использованы изображения в формате WebP.</li>
+                        <li>Использован векторный спрайт.</li>
+                        <li>Произведена оптимизация загрузки шрифтов.</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>Тестирование:</h3>
+                      <ol class="norms-list">
+                        <li>Вёрстка проходит тест на переполнение контентом.</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>Сборка проекта:</h3>
+                      <ol class="norms-list">
+                        <li>Процесс сборки личного проекта настроен с помощью Gulp.</li>
+                        <li>В результате сборки должна получаться папка build со всеми необходимыми файлами.</li>
+                        <li>Папка build со всем её содержимым не должна попадать в Гитхаб.</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>Разное:</h3>
+                      <ol class="norms-list">
+                        <li>Вёрстка идентично отображается в последних версиях браузеров <span>Chrome</span>, <span>Opera</span>, <span>Firefox</span>, <span>Safari</span>, <span>Edge</span>, а также в <span>Internet Explorer 11+</span>.</li>
+                        <li>Единообразное написание и форматирование кода в HTML, файлах CSS-препроцессора и JavaScript (включая файлы автоматизации).</li>
+                        <li>Мобильное меню должно быть работоспособным при отключённом JavaScript.</li>
+                        <li>Отсутствует транслит в названиях классов, атрибутах, переменных CSS-препроцессора, названиях примесей и так далее.</li>
+                        <li>Проект соответствует техническому заданию.</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>Доступность:</h3>
+                      <ol class="norms-list">
+                        <li>У интерактивных элементов при нажатии или фокусе с клавиатуры есть активное состояние.</li>
+                        <li>Все интерактивные элементы имеют текстовое описание.</li>
+                      </ol>
+                    </li>
+                    <li class="demands-discription-element">
+                      <h3>Форматирование и внешний вид:</h3>
+                      <ol class="norms-list">
+                        <li>Код соответствует правилам в EditorConfig.</li>
+                        <li>Код соответствует правилам в Stylelint.</li>
                       </ol>
                     </li>
                   </ul>
@@ -166,6 +284,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
