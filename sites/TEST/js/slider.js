@@ -12,7 +12,7 @@
 
   var slides = [slideFirst, slideSecond, slidethird];
   var slidesWay = [0, -719, -1438];
-  var images = ['../img/slider-background.jpg', '../img/slider-background2.jpg', '../img/slider-background3.jpg'];
+  var images = ['img/slider-background.jpg', 'img/slider-background2.jpg', 'img/slider-background3.jpg'];
   
   var indexSlide = 0;
   buttonRight.addEventListener('click' , function (evt) {
