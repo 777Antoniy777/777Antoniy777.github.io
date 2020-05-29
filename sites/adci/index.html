@@ -100,7 +100,7 @@
       <div class="slider__item">
         <picture>
           <source type="image/webp" srcset="img/intro-1@1x.webp 1x, img/intro-1@2x.webp 2x">
-          <!-- 1х: 3074px; 2x: 1866px -->
+          <!-- 1х: 1537px; 2x: 3074px -->
           <img class="slider__item-image" src="img/intro-1@1x.jpg" srcset="img/intro-1@1x.jpg 1x, img/intro-1@2x.jpg 2x" alt="Lampadari contemporanei">
         </picture>
         
@@ -112,7 +112,7 @@
       <div class="slider__item">
         <picture>
           <source type="image/webp" srcset="img/intro-1@1x.webp 1x, img/intro-1@2x.webp 2x">
-          <!-- 1х: 3074px; 2x: 1866px -->
+          <!-- 1х: 1537px; 2x: 3074px -->
           <img class="slider__item-image" src="img/intro-1@1x.jpg" srcset="img/intro-1@1x.jpg 1x, img/intro-1@2x.jpg 2x" alt="Lampadari di design">
         </picture>
 
@@ -124,7 +124,7 @@
       <div class="slider__item">
         <picture>
           <source type="image/webp" srcset="img/intro-1@1x.webp 1x, img/intro-1@2x.webp 2x">
-          <!-- 1х: 3074px; 2x: 1866px -->
+          <!-- 1х: 1537px; 2x: 3074px -->
           <img class="slider__item-image" src="img/intro-1@1x.jpg" srcset="img/intro-1@1x.jpg 1x, img/intro-1@2x.jpg 2x" alt="Bellissimi lampadari">
         </picture>
 
@@ -191,8 +191,8 @@
       <form class="popup__form" action="#" method="POST">
         <h3 class="popup__subtitle">Accedi</h3>
 
-        <input type="email" name="email" placeholder="E-mail" required="">
-        <input type="password" name="password" placeholder="Password" required="">
+        <input type="email" name="email" placeholder="E-mail" aria-label="Inserisci la tua mail" required="">
+        <input type="password" name="password" placeholder="Password" aria-label="Inserisci la tua password" required="">
 
         <button class="popup__form-button" type="submit">Accedi</button>
 
@@ -202,10 +202,10 @@
       <form class="popup__form" action="#" method="POST">
         <h3 class="popup__subtitle">Registrati</h3>
 
-        <input type="text" name="name" placeholder="Nome" required="">
-        <input type="text" name="surname" placeholder="Cognome" required="">
-        <input type="email" name="email" placeholder="E-mail" required="">
-        <input type="password" name="password" placeholder="Password" required="">
+        <input type="text" name="name" placeholder="Nome" aria-label="Inserisci il tuo nome" required="">
+        <input type="text" name="surname" placeholder="Cognome" aria-label="Inserire il cognome" required="">
+        <input type="email" name="email" placeholder="E-mail" aria-label="Inserisci la tua mail" required="">
+        <input type="password" name="password" placeholder="Password" aria-label="Inserisci la tua password" required="">
 
         <div class="popup__checkbox-wrapper">
           <input id="popup-agreement" type="checkbox" name="popup-agreement" value="true" required="">
@@ -255,8 +255,8 @@
         <h3 class="main-footer__form-title">Newsletter</h3>
 
         <form action="#" method="POST">
-          <input type="text" name="name" placeholder="Nome e Cognome" required="">
-          <input type="email" name="email" placeholder="Email" required="">
+          <input type="text" name="name" placeholder="Nome e Cognome" aria-label="Inserisci il tuo nome" required="">
+          <input type="email" name="email" placeholder="Email" aria-label="Inserisci la tua mail" required="">
 
           <div class="main-footer__checkbox-wrapper">
             <input id="footer-agreement" type="checkbox" name="footer-agreement" value="true" required="">
@@ -283,7 +283,7 @@
       <div class="main-footer__additional-wrapper">
         <ul class="main-footer__social-list">
           <li class="main-footer__social-item">
-            <a href="#">
+            <a href="#" aria-label="Aprici su Facebook">
               <svg class="main-footer__social-icon">
                 <use xlink:href="img/sprite/sprite.svg#fb-icon"></use>
               </svg>
@@ -291,7 +291,7 @@
           </li>
 
           <li class="main-footer__social-item">
-            <a href="#">
+            <a href="#" aria-label="Aprici su Instagram">
               <svg class="main-footer__social-icon">
                 <use xlink:href="img/sprite/sprite.svg#inst-icon"></use>
               </svg>
@@ -299,7 +299,7 @@
           </li>
 
           <li class="main-footer__social-item">
-            <a href="#">
+            <a href="#" aria-label="Aprici a Pinterest">
               <svg class="main-footer__social-icon">
                 <use xlink:href="img/sprite/sprite.svg#pint-icon"></use>
               </svg>

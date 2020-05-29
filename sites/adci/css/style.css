@@ -863,6 +863,13 @@ img {
         padding-bottom: 21px;
         font-size: 30px;
         line-height: 34px; } }
+  .slider__item-description {
+    font-size: 14px;
+    line-height: 18px; }
+    @media (min-width: 1024px) {
+      .slider__item-description {
+        font-size: 18px;
+        line-height: 24px; } }
   .slider__item-wrapper {
     position: absolute;
     top: 50%;
@@ -884,7 +891,7 @@ img {
 .tns-nav {
   position: absolute;
   z-index: 1;
-  bottom: 30px;
+  bottom: 29px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
@@ -899,6 +906,7 @@ img {
   width: 30px;
   height: 30px;
   margin-right: 24px;
+  padding: 0;
   background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 50%;
@@ -915,7 +923,7 @@ img {
     .tns-nav > button {
       width: 14px;
       height: 14px;
-      margin-right: 8px; } }
+      margin-right: 9px; } }
 
 .tns-nav .tns-nav-active {
   background-color: #e2d1a6; }
@@ -1324,13 +1332,13 @@ img {
     .main-footer__language-item::before {
       content: "";
       position: absolute;
-      top: 50%;
+      top: 0;
       right: -16px;
       width: 1px;
       height: 12px;
       background-color: #ffffff;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
+      -webkit-transform: translateY(50%);
+              transform: translateY(50%); }
     .main-footer__language-item:last-child::before {
       content: none; }
     @media (min-width: 1024px) {
@@ -1349,6 +1357,9 @@ img {
   .main-footer__social-item:active a,
   .main-footer__language-item:active a, .main-footer__form-button:active {
     opacity: 0.5; }
+
+_::-moz-range-track, body:last-child .main-footer__language-item::before {
+  width: 2px; }
 
 .overlay {
   display: none;
@@ -1580,9 +1591,14 @@ img {
   .popup__form:last-child {
     margin-bottom: 30px; } }
 
-_::-moz-progress-bar, body:last-child input:not([type="checkbox"]) {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+@media all and (min--moz-device-pixel-ratio: 0) {
+  _::-moz-progress-bar, body:last-child input:not([type="checkbox"]) {
+    padding-top: 10px;
+    padding-bottom: 10px; } }
+  @media all and (min--moz-device-pixel-ratio: 0) and (min-width: 1024px) {
+    _::-moz-progress-bar, body:last-child input:not([type="checkbox"]) {
+      padding-top: 5px;
+      padding-bottom: 5px; } }
 
 _::-moz-progress-bar, body:last-child .popup__form:last-child {
   margin-bottom: 30px; }
