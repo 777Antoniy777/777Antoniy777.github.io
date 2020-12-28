@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{340:function(e,a,s){"use strict";s.r(a),a.default=s.p+"assets/images/fill-heart.e5f246a18f2021ef3b4a8ea0eb487a15.svg"}}]);
